@@ -8,5 +8,6 @@ db.query('SELECT * from id_and_texts WHERE id = $1', [2], (err, res) => {
     logger.error(err);
     return;
   }
-  logger.info("Data" + res.rows[0])
+  logger.info("Data")
+  logger.info(JSON.stringify(res.rows[0]))
 });
