@@ -22,6 +22,7 @@ for (let i = 0; i < 1000; i++) {
         return;
       }
       logger.info(JSON.stringify(res.rows[0]))
+      release();
     })
   });
 }
