@@ -11,13 +11,13 @@ log4js.configure({
     },
     debug: {
       type: 'dateFile',
-      filename: './debug/app.log',
+      filename: './log/debug/app.log',
       daysToKeep: 30,
       pattern: 'yyyy-MM-dd-hh',
     },
     json: {
       type: 'dateFile',
-      filename: './json/app.log',
+      filename: './log/json/app.log',
       daysToKeep: 30,
       pattern: 'yyyy-MM-dd-hh',
       layout: {type: 'json', separator: ','},
